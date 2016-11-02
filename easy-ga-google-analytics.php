@@ -12,3 +12,22 @@
  * Domain Path: /languages
  * Tags: google analytics, analytics, ga, google 
  */
+
+/**
+ * Función que añade una nueva opción en el submenú de manage_options (Settings/Ajustes)
+ */
+function easy_ga_init () {
+	add_options_page( 'Easy GA Google Analytics', 'Easy Google Analytics', 'manage_options', 'easy_ga_admin', 'easy_ga_load_page');
+}
+
+/**
+ * Esta función es invocada desde add_options_page y carga una página dentro del panel de administración
+ */
+function easy_ga_load_page () {
+	$page = filter_input( INPUT_GET, 'page' );
+
+	require_once( plugin_dir_path( __FILE__ ) . 'admin/' . $page . '.php');
+}
+
+// Se utiliza el hook admin_menu para añadir menús y submenús extra en el panel de administración.
+add_action( 'admin_menu', 'easy_ga_init' );
