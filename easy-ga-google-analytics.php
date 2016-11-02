@@ -13,6 +13,10 @@
  * Tags: google analytics, analytics, ga, google 
  */
 
+if ( ! defined( 'WPINC' ) ) {
+	exit();
+}
+
 /**
  * Función que añade una nueva opción en el submenú de manage_options (Settings/Ajustes)
  */
@@ -55,3 +59,10 @@ function easy_ga_custom() {
 
 // Se utiliza el hook wp_head para insertar código en las etiquetas <head></head> de la plantilla del usuario
 add_action('wp_head', 'easy_ga_custom');
+
+function easy_ga_uninstall_hook() {
+	delete_option ( 'easy-ga-script-option' );
+	delete_site_option ( 'easy-ga-script-option' );
+}
+
+register_uninstall_hook (__FILE__, 'easy_ga_uninstall_hook');
