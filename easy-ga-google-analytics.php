@@ -31,3 +31,10 @@ function easy_ga_load_page () {
 
 // Se utiliza el hook admin_menu para añadir menús y submenús extra en el panel de administración.
 add_action( 'admin_menu', 'easy_ga_init' );
+
+function easy_ga_custom() {
+	echo stripslashes(get_option ( 'easy-ga-script-option' ) );
+}
+
+// Se utiliza el hook wp_head para insertar código en las etiquetas <head></head> de la plantilla del usuario
+add_action('wp_head', 'easy_ga_custom');
