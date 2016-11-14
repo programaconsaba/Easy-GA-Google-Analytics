@@ -3,7 +3,7 @@
  * Plugin Name: Easy GA Google Analytics
  * Plugin URI: http://www.programaconsaba.com/easy-ga-google-analytics
  * Description: Copy&Paste your Google Analytics code snippet and enables google analytics on all pages. Only Anonymous users have analytics.
- * Version: 1.1.0.SNAPSHOT
+ * Version: 1.1.0
  * Author: Jose Antonio Sabalete
  * Author URI: http://www.programaconsaba.com/quienes-somos/
  * License: GNU Affero General Public License v3.0

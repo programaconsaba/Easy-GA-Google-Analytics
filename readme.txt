@@ -32,3 +32,10 @@ You're done!
 *Release Date - June 1, 2016*
 
 * very first version of plugin
+
+= 1.1.0 =
+*Release Date - November 14, 2016*
+
+* Add internationalization English and Spanish languages.
+
+* Solve some issues.
