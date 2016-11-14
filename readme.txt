@@ -3,7 +3,7 @@ Contributors: jasabalete
 Tags: google analytics, analytics, ga, google
 Requires at least: 4.1
 Tested up to: 4.5
-Stable tag: 1.0
+Stable tag: 1.1
 License: GNU Affero General Public License v3.0
 License URI: https://www.gnu.org/licenses/agpl-3.0.html
 
